@@ -1,0 +1,29 @@
+<h1>Braces Expression</h1>
+<p>{{title}}</p>
+<p>{{2+2}}</p>
+<p>{{"Welcome " + name}}</p>
+<p>{{name.length}}</p>
+<p>{{name.toUpperCase()}}</p>
+<p>{{greet()}}</p>
+<p>{{siteUrl}}</p>
+<hr>
+<h1>Class Binding</h1>
+<p class="text-success">text success</p>
+<p [class]="successClass">text success class</p>
+<p [class]="successClass" class="text-special">text success and special class</p>
+<p [class.text-danger]="hasError">Codevolution</p>
+<p [ngClass]="messageClasses">message classes</p>
+<hr>
+<h1>Style Binding</h1>
+<p [style.color]="'orange'">style color</p>
+<p [style.color]="classStyle"></p>
+<p [ngStyle]="objStyles">Class Object Style</p>
+<hr>
+<h1>Event Binding</h1>
+<button (click)="onClick($event)">Greet</button>
+<p>{{greeting}}</p>
+<button (click)="greeting='second button'">Change Class Data</button>
+<hr>
+<h1>Template Reference Variables</h1>
+<input type="text" #myInput>
+<button (click)="logMessage(myInput.value)">Log</button>
